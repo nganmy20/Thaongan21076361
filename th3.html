@@ -1,5 +1,59 @@
 <!doctype html>
 <html>
+<style>
+nav {
+    background: rgb(138,43,226);
+    color: white;
+    font-family: 'PT Sans', times, sans-serif;
+    display: flex; 
+    justify-content: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: rgb(138,43,226);
+}
+
+nav ul li:hover > ul.sub-menu {
+    display: block;
+}
+
+nav ul li ul.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(147,112,219);
+    padding: 10px 0;
+}
+
+nav ul li ul.sub-menu li {
+    display: block;
+}
+
+nav ul li ul.sub-menu li a {
+    padding: 8px 20px;
+}
+</style>
   <head>
     <meta charset="utf-8">
     <title> Vũ Bích Thảo Ngân </title>
@@ -7,7 +61,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
-    <link rel="stylesheet" href="sample.css">
   </head>
   <body>
     <nav>
